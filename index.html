@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head> 
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/main.css">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>VK pics of a wall</title>
+</head>
+<body>
+  <form class="form-show wrapper" method="get">
+    <label for="">User id
+      <input type="text" class="form-show__owner-id-input"></input>
+    </label>
+    <button class="form-show__btn">Показать</button>
+  </form>
+  <form class="filters wrapper invisible" method="get">
+    <a href="" class="filters__newest">Newest</a>
+    <a href="" class="filters__likes">Likes</a>
+    <a href="" class="filters__comments">Comments</a>
+  </form>
+
+  <div class="pictures-container wrapper" style="font-size: 12px;"></div>
+
+  <div class="gallery-overlay invisible">
+    <img src="" class="gallery-overlay__image" alt="">
+    <div class="gallery-overlay__info wrapper">
+      <span class="gallery-overlay__info likes"></span>    
+      <span class="gallery-overlay__info comments"></span>
+      <span class="gallery-overlay__info data"></span>
+    </div>
+    <div class="gallery-overlay__arrows">
+      <span class="gallery-overlay__arrows left"></span>
+      <span class="gallery-overlay__arrows right"></span>
+    </div>
+  </div>
+
+  <template id="picture-template" style="display: none">
+    <a href="" class="picture">
+      <img src="" class="picture__img">
+      <div class="picture__socials">
+        <span class="picture__likes"></span>    
+        <span class="picture__comments"></span>
+      </div>
+    </a>
+  </template>
+
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+</html>
